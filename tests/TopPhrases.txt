@@ -1,0 +1,6 @@
+The test cases in the implementation test the following corner cases:
+1. Empty strings
+2. Several separator chars - "|" (several empty strings)
+3. Unicode chars
+4. Big data set with only unique random phrases
+5. Big data set with several top phrases among random unique.

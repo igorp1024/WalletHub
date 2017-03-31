@@ -1,0 +1,15 @@
+Necessary to check the strings starting with spaces, with multiple spaces and with national chars.
+Also to check the null value.
+
+=======================================
+ * Test Output:
+=======================================
+
+INITCAP("   UNITED states Of AmERIca СОЕДИНЕННЫЕ штаты АмЕРИКи СПОЛУЧЕНI штати АмЕРИки ї є")
+   United States Of America Соединенные Штаты Америки Сполученi Штати Америки Ї Є
+
+INITCAP(null)
+<empty response>
+
+INITCAP("a  UNITED states Of AmERIca СОЕДИНЕННЫЕ штаты АмЕРИКи СПОЛУЧЕНI штати АмЕРИки ї є")
+A  United States Of America Соединенные Штаты Америки Сполученi Штати Америки Ї Є

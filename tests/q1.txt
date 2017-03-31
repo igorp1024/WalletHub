@@ -1,0 +1,27 @@
+Simple test case. Just to check against records with unsorted "votes" value.
+
+=======================================
+ * Source data:
+=======================================
+
+name   votes
+-----  -----
+Smith  10
+Jones  15
+White  20
+Black  40
+Green  50
+Brown  20
+
+=======================================
+ * Test Output:
+=======================================
+
+rank  name   votes
+----  -----  -----
+1     Smith  10
+2     Jones  15
+3     Brown  20
+4     White  20
+5     Black  40
+6     Green  50
