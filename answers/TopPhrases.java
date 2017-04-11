@@ -89,10 +89,10 @@ public class TopPhrases {
         // Reduce the set of phrases to the limit.
         // Memory use is O(n) (since top phrases are kept in TreeMap), where n is phrases amount.
         // Algorithm complexity: search on file system is O(n), inserting into TreeMap is O(n*log n)
-        // So, totally is O(n) for this method.
+        // So, totally is O(n*log n) for this method.
         return reduce(storagePath, topLimit);
 
-        // Ultimately, memory use: O(1 + n) = O(n), algorithm complexity: O(n + n + n*log n) = O(n),
+        // Ultimately, memory use: O(1 + n) = O(n), algorithm complexity: O(n + n + n*log n) = O(n*log n),
         // where n is phrases amount.
         // But filesystem I/O overhead is also should be taken into consideration.
     }
